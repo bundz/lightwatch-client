@@ -1,0 +1,231 @@
+@font-face {
+    font-family: panama;
+    src: url("../fonts/Panama-Light.otf");
+}
+
+@font-face {
+    font-family: got;
+    src: url("../fonts/got.otf");
+}
+
+@font-face {
+    font-family: gotBold;
+    src: url("../fonts/got-bold.otf");
+}
+
+@font-face {
+    font-family: gotReg;
+    src: url("../fonts/got-reg.otf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: got;
+}
+
+.menu {
+    position: fixed;
+    width: 20%;
+    max-width: 300px;
+    min-width: 250px;
+    height: 100%;
+    background-color: #5c4a88;
+    color: #FFF;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0,0,0,0.39);
+    overflow: scroll;
+}
+
+.menu > h1 {
+    font-family: panama;
+    text-align: center;
+}
+
+.menu > .menu-user {
+    width: 100%;
+    height: 50px;
+    background-color: #c2b2ff;
+    box-sizing: border-box;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.menu > .menu-user > img {
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+    border-radius: 100px;
+    margin-left: 5px;
+}
+
+.menu > .menu-user > p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    padding: 10px;
+}
+
+.menu > .menu-user > a {
+    width: 16px;
+    height: 16px;
+    display: block;
+    cursor: pointer;
+    background-size: 100% 100%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+
+.menu > .menu-user > .edit-icon {
+    background-image: url("../imgs/settings.png");
+}
+
+.menu > .menu-user > .edit-icon:hover {
+    background-image: url("../imgs/settings-hover.png");
+}
+
+.menu > .menu-user > .exit-icon {
+    background-image: url("../imgs/exit.png");
+}
+
+.menu > .menu-user > .exit-icon:hover {
+    background-image: url("../imgs/exit-hover.png");
+}
+
+.menu > .menu-servers > details > summary {
+    padding-left: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.menu > .menu-servers > details > summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    display: block;
+}
+
+.menu > .menu-servers > details > summary:after {
+    background-color: white;
+}
+
+.menu > .menu-servers > details[open] > summary {
+    border-left: 4px solid #c2b2ff;
+    font-family: gotReg;
+    margin-bottom: 0px;
+}
+
+.menu > .menu-servers > details > summary:hover {
+    background-color: #c2b2ff;
+    border-color: white;
+}
+
+.menu > .menu-servers > details > ul {
+    padding-left: 24px;
+    background-color: #b1a1ee;
+}
+
+.menu > .menu-servers > details[open] > ul {
+    background-color: #c2b2ff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: inset 1px 1px 13px 1px rgba(0,0,0,0.4), inset 1px 1px 1px 1px rgba(0,0,0,0.39);
+    padding-top: 10px;
+}
+
+.menu > .menu-servers > details > ul > li {
+    list-style: none;
+    cursor: pointer;
+    height: 30px;
+}
+
+.menu > .menu-servers > details > ul > .add-machine {
+    margin-top: 6px;
+    font-size: 0.7em;
+}
+
+.menu > .menu-servers > details > ul > .add-machine > a {
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 0px 1px;   
+}
+
+.menu > .menu-servers > details > ul > .add-machine > a:hover {
+    border: 1px solid #5c4a88;
+    background-color: #5c4a88;
+    color:white;
+}
+
+.menu > .menu-servers > a {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menu > .menu-servers > a:hover {
+    background-color: #c2b2ff;
+}
+
+.menu > .menu-servers > details > ul > li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.menu > .menu-servers > p {
+    font-family: gotBold;
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu > .menu-servers > div > p {
+    font-family: gotBold;
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.menu > .menu-servers > div > span {
+    font-size: 0.7em;
+    border: 1px solid white;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0px 1px;
+}
+
+.menu > .menu-servers > div > .add-server {
+    margin-left: 80px;
+}
+
+.menu > .menu-servers > div > .add-server:hover {
+    border-color: white;
+    background-color: green;
+    border-color: green;
+}
+
+.menu > .menu-servers > div > .remove-server:hover {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.main {
+    width: 80%;
+    height: 800px;
+    margin-left: 20%;
+}
+
+
+
+
